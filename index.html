@@ -3,17 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Boda P & A </title>
+  <title>Boda P & A</title>
   <style>
-    body { <!-- Fondo Principal -->
-      font-family: 'Georgia', serif;
+    body {
+      font-family: Georgia, serif;
       background-color: #7A9D89;
       color: #5a3e36;
       text-align: center;
-      padding: 3rem;
+      padding: 2rem;
+      margin: 0;
     }
     .card {
-	  position: relative; /* ¡clave! esto hará que la flor se quede dentro */
+      position: relative;
       background-color: #F3CFC9;
       border: 4px solid #bcaaa4;
       border-radius: 20px;
@@ -21,133 +22,133 @@
       max-width: 600px;
       margin: auto;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
-	  z-index: 2; /* Asegura que el texto esté por encima */
     }
-	  .flor-superior {
+    .decorativa {
       position: absolute;
-      top: 0px;
-      left: 0px;
-      width: 1px;
+      max-width: 30%;
+      height: auto;
       z-index: 1;
     }
-		.flor-med {
-      position: absolute;
-      top: 370px;
-      left: 180px;
-      width: 1px;
-      z-index: 1;
+    .flor-superior {
+      top: 0%;
+      left: 0%;
     }
-		.flor-cora {
-      position: absolute;
-      top: 690px;
-      left: 230px;
-      width: 1px;
-      z-index: 1;
+    .flor-med {
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+    .flor-cora {
+      top: 75%;
+      left: 60%;
+      transform: translate(-50%, -50%);
     }
-    p {
-      font-size: 1.2rem;
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
     }
+    h1 { font-size: 2rem; margin: 1rem 0; }
+    p { font-size: 1rem; margin: 0.5rem 0; }
     .button {
       background-color: #A79E90;
       color: black;
-	  font-family: Georgia;
+      font-family: Georgia;
       padding: 1rem 2rem;
       border: none;
       border-radius: 15px;
-      font-size: 1.1rem;
+      font-size: 1rem;
       cursor: pointer;
-      margin-top: 1rem;
-    }
-    iframe {
-      width: 100%;
-      height: 250px;
-      border: none;
-      margin-top: 1rem;
-      border-radius: 10px;
+      margin: 1rem 0;
+      position: relative;
+      z-index: 2;
     }
     #countdown {
       font-weight: bold;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin-top: 1rem;
       color: #8b5e3c;
+      position: relative;
+      z-index: 2;
     }
-   
+    @media (max-width: 600px) {
+      .decorativa {
+        position: relative;
+        max-width: 50%;
+        margin: 1rem auto;
+        transform: none;
+      }
+      .flor-superior, .flor-med, .flor-cora {
+        top: auto;
+        left: auto;
+      }
+      h1 { font-size: 1.5rem; }
+      p { font-size: 0.9rem; }
+      .button { padding: 0.8rem 1.5rem; font-size: 0.9rem; }
+    }
   </style>
 </head>
 <body>
 
-	
   <div class="card">
-  <div class="contenedor">
-    <!-- Imagen floral dentro del fondo rosa -->
-    <img src="ce7461119e085195edd24af50723a78c.png" style="width: 350px; height: auto;" class="flor-superior" alt="Decoración floral">
+    <img src="ce7461119e085195edd24af50723a78c.png"
+         alt="Flor superior" class="decorativa flor-superior">
+    <img src="4fbcf2ec2f4c02fe954f9bae2b2d45df.png"
+         alt="Flor mediana" class="decorativa flor-med">
+    <img src="0496e2f2d31c2c9f88cc8841673e6e25.png"
+         alt="Flor corazón" class="decorativa flor-cora">
 
-	<h1 style="font-size: 40px; font-family: 'Trebuchet MS';  z-index: 2; "> <br><br>¡Nos casamos!</h1>
-	
-	<p style="font-size: 28px; font-style: italic; font-weight: bold;">
-	 <br>Pamela Ibarra Hernandez <br> & <br> Adrian Alejandro Espinosa Hernandez
-	</p>
-	
-	<img src="4fbcf2ec2f4c02fe954f9bae2b2d45df.png" style="width: 320px; height: 800;" class="flor-med" alt="flor dos">
-    <p style="font-size: 25px;">
-	<br> <br> <br><br><br> <br> <em>"Nunca se trató de cambiarnos desde cero..... <br> Ganar, No perder.... <br> Te amo como sea, donde sea, como sea, cuando sea tambien."</em>
-	</p>
-	
-	<img src="0496e2f2d31c2c9f88cc8841673e6e25.png" style="width: 220px; height: auto;" class="flor-cora" alt="flor dos">
-     <p style="font-size: 22px;">
-	<br> <br> <br><br><br> <br><br><br> <br> Nos encantaría contar con tu presencia para celebrar este momento tan especial
-	</p>
-	
-	<p style="font-size: 22px;">
-	Ceremonia y Recepcion <br>
-	
-	<strong>📍 "Los Catrines" <br> Jardin de Eventos <br> Carretera Matehuala 1306 Col Las Higueras <br> Soledad de Graciano Sánchez</strong></p> 
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.9361174823594!2d-100.9349027!3d22.1983214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842aa1bdff10bcd1%3A0x4bea65eb855be275!2sLos%20Catrines%20Jardin%20de%20Eventos!5e1!3m2!1ses-419!2smx!4v1751329959228!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-	
-	
-	<p style="font-size: 22px;">
-	Fecha y Hora 
-	
-	<strong> <br>23 de Agosto 2025 <br> 7:00 PM </strong>
-	</p>
+    <h1>¡Nos casamos!</h1>
 
+    <p style="font-style: italic; font-weight: bold; font-size: 1.3rem;">
+      Pamela Ibarra Hernández <br> & <br> Adrián Alejandro Espinosa Hernández
+    </p>
+
+    <p><em>"Nunca se trató de cambiarnos..."</em></p>
+
+    <p>Nos encantaría contar con tu presencia para celebrar este momento tan especial</p>
+
+    <p>
+      Ceremonia y Recepción<br>
+      <strong>📍 "Los Catrines" Jardin...</strong>
+    </p>
+
+    <iframe src="https://www.google.com/maps/embed?..."></iframe>
+
+    <p>
+      Fecha y hora:<br>
+      <strong>23 de Agosto de 2025 · 7:00 PM</strong>
+    </p>
 
     <div id="countdown"></div>
 
-
-    <button class="button" onclick="confirmarAsistencia()">Confirmar asistencia por WhatsApp</button>
-
-	</div>
+    <button class="button" onclick="confirmarAsistencia()">
+      Confirmar asistencia por WhatsApp
+    </button>
   </div>
 
   <script>
     function confirmarAsistencia() {
-      const mensaje = encodeURIComponent("¡Hola! Confirmo mi asistencia a su boda 💕");
-      window.open("https://wa.me/524441800009?text=" + mensaje, "_blank");
+      const msg = encodeURIComponent("¡Hola! Confirmo mi asistencia a su boda 💕");
+      window.open("https://wa.me/524441591179?text=" + msg, "_blank");
     }
-
-    const fechaEvento = new Date("2025-10-30T18:00:00").getTime();
-    const countdown = setInterval(() => {
-      const ahora = new Date().getTime();
-      const distancia = fechaEvento - ahora;
-
-      const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-      const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-      const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
-
-      document.getElementById("countdown").innerHTML =
-        `⏳ Faltan ${dias} días, ${horas} hrs, ${minutos} min, ${segundos} seg`;
-
-      if (distancia < 0) {
-        clearInterval(countdown);
-        document.getElementById("countdown").innerHTML = "¡Ya comenzó la boda! 🎉";
+    const fi = new Date("2025-08-23T19:00:00").getTime();
+    const cd = setInterval(() => {
+      const d = Date.now();
+      const dist = fi - d;
+      if (dist < 0) {
+        clearInterval(cd);
+        document.getElementById("countdown").innerHTML = "¡Ya comenzó! 🎉";
+        return;
       }
-    }, 1000);
+      const days = Math.floor(dist/(1000*60*60*24)),
+            hrs = Math.floor((dist%(1000*60*60*24))/(1000*60*60)),
+            mins = Math.floor((dist%(1000*60*60))/(1000*60)),
+            secs = Math.floor((dist%(1000*60))/1000);
+      document.getElementById("countdown").innerHTML =
+        `⏳ Faltan ${days} días, ${hrs} hrs, ${mins} min, ${secs} seg`;
+    },1000);
   </script>
 </body>
 </html>
+
