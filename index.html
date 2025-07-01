@@ -10,7 +10,8 @@
       background-color: #7A9D89;
       color: #5a3e36;
       text-align: center;
-      padding: 3rem;
+      padding: 2rem;
+      margin: 0;
     }
     .card {
 	  position: relative; /* ¡clave! esto hará que la flor se quede dentro */
@@ -21,10 +22,12 @@
       max-width: 600px;
       margin: auto;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
-	  z-index: 2; /* Asegura que el texto esté por encima */
+      z-index: 2; /* Asegura que el texto esté por encima */
     }
+	  
 	  .flor-superior {
-      position: absolute;
+      position: absolute;	
+	 max-width: 30%;
       top: 0px;
       left: 0px;
       width: 1px;
@@ -32,6 +35,7 @@
     }
 		.flor-med {
       position: absolute;
+	 max-width: 30%;
       top: 370px;
       left: 180px;
       width: 1px;
@@ -39,10 +43,16 @@
     }
 		.flor-cora {
       position: absolute;
+      max-width: 30%;
       top: 690px;
       left: 230px;
       width: 1px;
       z-index: 1;
+    }
+img {
+      max-width: 100%;
+      height: auto;
+      display: block;
     }
     h1 {
       font-size: 2.5rem;
@@ -75,11 +85,16 @@
       margin-top: 1rem;
       color:#8b5e3c;
     }
-   /* Ajustes para móviles */
-    @media (max-width: 600px) {
+   @media (max-width: 600px) {
       .decorativa {
-        max-width: 100px;
+        position: relative;
+        max-width: 50%;
+        margin: 1rem auto;
+        transform: none;
       }
+      .flor-superior, .flor-med, .flor-cora {
+        top: auto;
+        left: auto;
       h1 {
         font-size: 1.5rem;
       }
